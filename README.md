@@ -1,17 +1,6 @@
 # MTP Assistant
 
-Intake-assessment assistant for community health workers.
-
-## Pipeline (current status)
-
-| Step | Status |
-|---|---|
-| `transcribe` | ✅ implemented |
-| `generate_note` | stub |
-| `apply_rules` | stub |
-| `retrieve_resources` | stub |
-| `draft_email` | stub |
-| `save_session` | stub |
+Intake-assessment assistant for community health workers. This program transcribes audio files, drafts an encounter note, and uses an LNN-like ruleset to identify any clinical or social emergency flags. These flags as well as lower acuity needs are documented as tasks for the community health worker. Then, a followup email is drafted using RAG to outline relevant community resources for the client and the next steps for the working relationship.
 
 ## Setup
 
