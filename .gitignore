@@ -8,3 +8,6 @@ outputs/
 dist/
 build/
 .DS_Store
+*.wav
+*.mp3
+*.m4a
