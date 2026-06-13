@@ -17,6 +17,7 @@ from pathlib import Path
 from faster_whisper import WhisperModel
 
 from clarifications import generate_clarifications, load_chw_clarifications
+from email_draft import draft_email
 from note import generate_note, render_next_steps
 from retrieval import retrieve_resources
 from rules.apply_rules import apply_rules
@@ -56,15 +57,7 @@ def transcribe(audio_path: Path, session_dir: Path) -> dict:
     }
 
 
-# ---------------------------------------------------------------------------
-# Step 6: Draft email (stub — implemented in a later session)
-# ---------------------------------------------------------------------------
-
-def draft_email(note: dict, validated_resources: dict) -> str:
-    """Stub: compose a follow-up email to the patient or care team."""
-    print("[draft_email] (stub)")
-    return "PLACEHOLDER EMAIL BODY"
-
+# draft_email imported from email_draft.py
 
 # ---------------------------------------------------------------------------
 # Save session
@@ -107,8 +100,12 @@ def save_session(
     if warnings:
         _write("unresolved_warnings.json", warnings)
 
-    if email_draft and email_draft != "PLACEHOLDER EMAIL BODY":
+    if email_draft:
         (session_dir / "email_draft.txt").write_text(email_draft, encoding="utf-8")
+        print(f"[save_session] → {session_dir / 'email_draft.txt'}")
+
+    if resources:
+        _write("resources_used.json", resources)
 
 
 # ---------------------------------------------------------------------------
@@ -145,7 +142,7 @@ def run_intake(audio_path: str | Path, template: str) -> None:
     client_zip          = note.get("extracted", {}).get("client_zip")
     candidates          = retrieve_resources(note, client_zip)
     validated           = validate_resources(candidates, note, chw_clarifications, rules_output)
-    email_draft         = draft_email(note, validated)
+    email_draft         = draft_email(note, validated, rules_output)
 
     save_session(
         session_dir, transcript, note,

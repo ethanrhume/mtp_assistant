@@ -1,0 +1,70 @@
+{
+  "questions": [
+    {
+      "question_id": "housing_acuity",
+      "domain": "housing",
+      "question": "AI scribe estimated: client is stably housed (61% confidence). Please confirm or correct.",
+      "options": [
+        "Confirm",
+        "client is unhoused and sleeping outside",
+        "client is unhoused and sleeping in a vehicle",
+        "client is couch surfing or in unstable temporary housing",
+        "Other"
+      ],
+      "allow_freetext": true,
+      "clinical_context": "Determines which housing resources are surfaced",
+      "confidence": 0.6104,
+      "evidence": "Yeah so what I really need right now is housing",
+      "skipped_warning": null
+    },
+    {
+      "question_id": "pcp_status",
+      "domain": "clinical",
+      "question": "Client indicated they see a provider but did not name one. Do they have an established primary care provider?",
+      "options": [
+        "Yes, has a PCP",
+        "No PCP",
+        "Unknown"
+      ],
+      "allow_freetext": false,
+      "clinical_context": "Determines whether PCP connection task is added",
+      "skipped_warning": null
+    }
+  ],
+  "detections": {
+    "housing": {
+      "level": 12,
+      "level_description": "client is stably housed",
+      "confidence": 0.6104,
+      "evidence": "Yeah so what I really need right now is housing",
+      "source": "transcript",
+      "chw_override": null,
+      "chw_override_timestamp": null
+    },
+    "food": null,
+    "ebt_enrolled": null,
+    "pcp_status": null,
+    "pcp_status_source": null,
+    "therapist_status": null,
+    "therapist_status_source": null,
+    "safety": {
+      "SI": {
+        "confirmed": null,
+        "source": null
+      },
+      "DV": {
+        "confirmed": null,
+        "source": null
+      },
+      "CHILD_ABUSE": {
+        "confirmed": null,
+        "source": null
+      },
+      "RED_FLAG_CLINICAL": {
+        "confirmed": null,
+        "source": null
+      }
+    },
+    "raw_responses": []
+  }
+}
