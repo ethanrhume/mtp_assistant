@@ -1,8 +1,11 @@
 """
 MTP Assistant — intake-assessment pipeline for community health workers.
 
-Pipeline: audio → transcribe → generate_note → apply_rules
-                → retrieve_resources → draft_email → save_session
+Pipeline:
+  audio → transcribe → generate_note → generate_clarifications
+       → [UI PLACEHOLDER: CHW responds to clarification questions]
+       → load_chw_clarifications → apply_rules → retrieve_resources
+       → validate_resources → draft_email → save_session
 """
 
 import json
@@ -12,14 +15,19 @@ from datetime import datetime
 from pathlib import Path
 
 from faster_whisper import WhisperModel
+
+from clarifications import generate_clarifications, load_chw_clarifications
 from note import generate_note, render_next_steps
+from retrieval import retrieve_resources
+from rules.apply_rules import apply_rules
+from rules.validate_resources import validate_resources
 
 OUTPUTS_DIR = Path("outputs")
 MODEL_SIZE = "base"  # tiny | base | small | medium | large-v3
 
 
 # ---------------------------------------------------------------------------
-# Step 1: Transcribe (fully implemented)
+# Step 1: Transcribe
 # ---------------------------------------------------------------------------
 
 def transcribe(audio_path: Path, session_dir: Path) -> dict:
@@ -36,7 +44,6 @@ def transcribe(audio_path: Path, session_dir: Path) -> dict:
     transcript_path.write_text(text, encoding="utf-8")
     print(f"[transcribe] Transcript saved → {transcript_path}")
 
-    # Copy source recording into session folder for reproducibility
     recording_copy = session_dir / audio_path.name
     shutil.copy2(audio_path, recording_copy)
     print(f"[transcribe] Recording copied → {recording_copy}")
@@ -49,53 +56,59 @@ def transcribe(audio_path: Path, session_dir: Path) -> dict:
     }
 
 
-# generate_note and render_next_steps are imported from note.py
-
-
 # ---------------------------------------------------------------------------
-# Steps 3–6: Stubs — real logic added in later sessions
+# Step 6: Draft email (stub — implemented in a later session)
 # ---------------------------------------------------------------------------
 
-def apply_rules(note: dict) -> dict:
-    """Stub: apply clinical decision rules and flag action items."""
-    print("[apply_rules] (stub)")
-    return {
-        "note": note,
-        "flags": [],
-        "urgency": "routine",
-    }
-
-
-def retrieve_resources(rules_output: dict) -> dict:
-    """Stub: RAG lookup — fetch relevant resources for flagged issues."""
-    print("[retrieve_resources] (stub)")
-    return {
-        "rules_output": rules_output,
-        "resources": [],
-    }
-
-
-def draft_email(resources_output: dict) -> str:
+def draft_email(note: dict, validated_resources: dict) -> str:
     """Stub: compose a follow-up email to the patient or care team."""
     print("[draft_email] (stub)")
     return "PLACEHOLDER EMAIL BODY"
 
 
-def save_session(session_dir: Path, transcript: dict, note: dict,
-                 rules_output: dict, resources_output: dict, email_draft: str) -> None:
-    """Save structured note (and later: email, metadata) into the session folder."""
-    note_path = session_dir / "note.json"
-    note_path.write_text(json.dumps(note, indent=2), encoding="utf-8")
-    print(f"[save_session] Note saved → {note_path}")
+# ---------------------------------------------------------------------------
+# Save session
+# ---------------------------------------------------------------------------
 
-    # render and save next_steps sidebar for meet_the_patient notes
+def save_session(
+    session_dir: Path,
+    transcript: dict,
+    note: dict,
+    clarifications: dict,
+    chw_clarifications: dict,
+    rules_output: dict,
+    validated_resources: dict,
+    email_draft: str,
+) -> None:
+    """Persist all session artifacts to session_dir."""
+
+    def _write(name: str, data: dict | list) -> Path:
+        p = session_dir / name
+        p.write_text(json.dumps(data, indent=2), encoding="utf-8")
+        print(f"[save_session] → {p}")
+        return p
+
+    _write("note.json", note)
+
     if note.get("_template") == "meet_the_patient":
-        next_steps_text = render_next_steps(note)
         ns_path = session_dir / "next_steps.txt"
-        ns_path.write_text(next_steps_text, encoding="utf-8")
-        print(f"[save_session] Next steps saved → {ns_path}")
+        ns_path.write_text(render_next_steps(note), encoding="utf-8")
+        print(f"[save_session] → {ns_path}")
 
-    # email_draft and rules_output artifacts come in later sessions
+    _write("clarifications_draft.json", clarifications)
+    _write("chw_clarifications.json", chw_clarifications)
+    _write("rules_output.json", rules_output)
+
+    resources = validated_resources.get("resources", [])
+    if resources:
+        _write("resources.json", resources)
+
+    warnings = validated_resources.get("unresolved_warnings", [])
+    if warnings:
+        _write("unresolved_warnings.json", warnings)
+
+    if email_draft and email_draft != "PLACEHOLDER EMAIL BODY":
+        (session_dir / "email_draft.txt").write_text(email_draft, encoding="utf-8")
 
 
 # ---------------------------------------------------------------------------
@@ -105,6 +118,11 @@ def save_session(session_dir: Path, transcript: dict, note: dict,
 def run_intake(audio_path: str | Path, template: str) -> None:
     """
     template: one of "SOAP", "SIRP", "meet_the_patient"
+
+    UI PLACEHOLDER: After generate_clarifications(), the real pipeline will pause
+    and present clarification questions to the CHW via a UI. The CHW's responses
+    are saved as session_dir/chw_clarifications.json. Until that UI is built,
+    load_chw_clarifications() falls back to transcript-detection-only values.
     """
     audio_path = Path(audio_path)
     if not audio_path.exists():
@@ -115,16 +133,30 @@ def run_intake(audio_path: str | Path, template: str) -> None:
     session_dir.mkdir(parents=True, exist_ok=True)
     print(f"\n=== Session: {session_dir} ===\n")
 
-    transcript       = transcribe(audio_path, session_dir)
-    note             = generate_note(transcript, template)
-    rules_output     = apply_rules(note)
-    resources_output = retrieve_resources(rules_output)
-    email_draft      = draft_email(resources_output)
-    save_session(session_dir, transcript, note, rules_output, resources_output, email_draft)
+    transcript        = transcribe(audio_path, session_dir)
+    note              = generate_note(transcript, template)
+    clarifications    = generate_clarifications(transcript, note)
+
+    # [UI PLACEHOLDER] — present note + clarification questions to CHW here
+    # CHW responses saved to session_dir/chw_clarifications.json
+
+    chw_clarifications  = load_chw_clarifications(clarifications, session_dir)
+    rules_output        = apply_rules(transcript, chw_clarifications)
+    client_zip          = note.get("extracted", {}).get("client_zip")
+    candidates          = retrieve_resources(note, client_zip)
+    validated           = validate_resources(candidates, note, chw_clarifications, rules_output)
+    email_draft         = draft_email(note, validated)
+
+    save_session(
+        session_dir, transcript, note,
+        clarifications, chw_clarifications,
+        rules_output, validated, email_draft,
+    )
 
     print(f"\n=== Done. Artifacts in {session_dir} ===")
-    print(f"    Transcript ({len(transcript['text'])} chars): {transcript['transcript_path']}")
-    print(f"    Note (template={template!r}): {session_dir / 'note.json'}")
+    print(f"    note.json | rules_output.json | resources.json ({len(validated.get('resources', []))} resources)")
+    if validated.get("unresolved_warnings"):
+        print(f"    ⚠ {len(validated['unresolved_warnings'])} unresolved warning(s) — see unresolved_warnings.json")
 
 
 if __name__ == "__main__":

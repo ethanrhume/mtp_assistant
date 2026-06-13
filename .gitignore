@@ -11,3 +11,5 @@ build/
 *.wav
 *.mp3
 *.m4a
+data/chroma/
+data/trigger_embeddings.json

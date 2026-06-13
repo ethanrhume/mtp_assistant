@@ -23,28 +23,29 @@ _EXTRACTED_SCHEMA = {
     ],
     "medications": ["string"],
     "pcp": "string or null",
+    "client_zip": "string or null — extract from transcript if mentioned, otherwise null",
     "flags": ["string"],
 }
 
 SCHEMAS: dict[str, dict] = {
     "SOAP": {
-        "subjective": "prose string",
-        "objective": "prose string",
-        "assessment": "prose string",
-        "plan": "prose string",
+        "subjective": "prose: client's reported concerns, history, and needs in their own words",
+        "objective": "prose: observable non-clinical information only — affect, engagement, living situation, concrete social circumstances. No vital signs, physical exam, or lab values — these are not part of CHW visits.",
+        "assessment": "prose: CHW's assessment of the client's situation and needs",
+        "plan": "prose: planned next steps and interventions",
         "extracted": _EXTRACTED_SCHEMA,
     },
     "SIRP": {
-        "situation": "prose string",
-        "intervention": "prose string",
-        "response": "prose string",
-        "plan": "prose string",
+        "situation": "prose: the specific circumstances, environment, and precipitating factors that bring the client to session or characterize their current situation. include relevant life events, stressors, and situational details.",
+        "intervention": "prose: actions taken during the meeting to address client's situation. include approach, techniques, and how interventions were tailored to the situation.",
+        "response": "prose: client's response to interventions. document external (verbal) indications of intervention efficacy, as well as client's engagement with problem-solving around their situation.",
+        "plan": "prose: planned next steps and interventions",
         "extracted": _EXTRACTED_SCHEMA,
     },
     "meet_the_patient": {
-        "patient_intro": "prose string",
-        "medical": "prose string — preserve bullet structure where present",
-        "behavioral": "prose string",
+        "patient_intro": "prose: who is the meeting conducted with, and if not the patient themself, the client's relationship to the patient",
+        "medical": "bulleted structure including name and location of current PCP; physical health diagnose; current insurance or medication access issues; recent clinical events",
+        "behavioral": "bulleted structure including name and location of any current psychiatrist or therapist; diagnoses; whether an internal referral to therapy was made; indication of whether this section was deferred.",
         "sdoh": {
             "housing": "prose string",
             "food": "prose string",
@@ -76,10 +77,19 @@ correct term from conversational context and use the corrected form in your outp
    When in doubt, use "ai_suggested". Never label an AI suggestion as "transcribed".
 4. Do not invent clinical facts absent from the transcript. If a field has no \
 supporting content, use null or an empty list — never fabricate.
-5. flags: surface clinical or safety concerns as plain strings \
+5. This is a Community Health Worker (CHW) intake note, not a clinical exam.
+   The SOAP "objective" section should reflect observable, non-clinical information
+   only — things like the client's living situation, affect, engagement in the
+   conversation, or concrete social circumstances. Never reference vital signs,
+   physical exam findings, lab values, or clinical measurements. These are
+   not performed in CHW visits and should not appear\
+6. flags: surface clinical or safety concerns as plain strings \
 (e.g. "patient reports chest pain", "missed medications 3 days").
-6. next_steps: if this field appears in the schema, always return it as an \
+7. next_steps: if this field appears in the schema, always return it as an \
 empty string — it is derived separately and must not be populated by the model.
+8. client_zip: extract the client's zip code from the transcript if it is \
+explicitly mentioned (e.g. in an address or when discussing local services). \
+If not mentioned, set to null. Never infer or guess a zip code.
 
 Return JSON matching this schema exactly:
 

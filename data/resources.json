@@ -1,0 +1,650 @@
+[
+  {
+    "id": "financial_assistance__cash__001",
+    "name": "Hopelink",
+    "domain": "financial_assistance",
+    "subdomain": "cash",
+    "description": "Flexible financial assistance can help cover costs for prescriptions, medical bills, water and sewer bills, car repair bills, and other needs based on an unexpected financial shock. Funds from this program along with eviction prevention and first month\u2019s rent are applied directly to the bill the client has been approved to receive financial assistance for.",
+    "access": "To access, fill out the online form or call the service center",
+    "contact": "(425)-333-4163",
+    "website": "https://www.hopelink.org/programs/financial-assistance/",
+    "address": "31957 East Commercial St Carnation,\u00a0 Washington\u00a0 98014",
+    "zip_codes": [
+      "98014",
+      "98019",
+      "98204",
+      "98045",
+      "98050",
+      "98065",
+      "98068",
+      "98224",
+      "98288",
+      "98294"
+    ],
+    "counties": [
+      "King"
+    ],
+    "notes": "Only serves those parts of eligible ZIPs within King County. Lottery based each month, and must reapply monthly to stay on the list"
+  },
+  {
+    "id": "financial_assistance__cash__002",
+    "name": "Hopelink",
+    "domain": "financial_assistance",
+    "subdomain": "cash",
+    "description": "Flexible financial assistance can help cover costs for prescriptions, medical bills, water and sewer bills, car repair bills, and other needs based on an unexpected financial shock. Funds from this program along with eviction prevention and first month\u2019s rent are applied directly to the bill the client has been approved to receive financial assistance for.",
+    "access": "To access, fill out the online form or call the service center",
+    "contact": "(425)-889-7880",
+    "website": "https://www.hopelink.org/programs/financial-assistance/",
+    "address": "1101 120th Ave NE Kirkland, WA 98033",
+    "zip_codes": [
+      "98011",
+      "98012",
+      "98021",
+      "98033",
+      "98034",
+      "98041",
+      "98072",
+      "98077",
+      "98083"
+    ],
+    "counties": [
+      "King"
+    ],
+    "notes": "Only serves those parts of eligible ZIPs within King County. Lottery based each month, and must reapply monthly to stay on the list"
+  },
+  {
+    "id": "financial_assistance__cash__003",
+    "name": "Hopelink",
+    "domain": "financial_assistance",
+    "subdomain": "cash",
+    "description": "Flexible financial assistance can help cover costs for prescriptions, medical bills, water and sewer bills, car repair bills, and other needs based on an unexpected financial shock. Funds from this program along with eviction prevention and first month\u2019s rent are applied directly to the bill the client has been approved to receive financial assistance for.",
+    "access": "To access, fill out the online form or call the service center",
+    "contact": "(206)-440-7300",
+    "website": "https://www.hopelink.org/programs/financial-assistance/",
+    "address": "17837 Aurora Ave N Shoreline, WA 98133",
+    "zip_codes": [
+      "98133",
+      "98155",
+      "98177"
+    ],
+    "counties": [
+      "King"
+    ],
+    "notes": "Only serves those parts of eligible ZIPs within King County. Lottery based each month, and must reapply monthly to stay on the list"
+  },
+  {
+    "id": "financial_assistance__cash__004",
+    "name": "Hopelink",
+    "domain": "financial_assistance",
+    "subdomain": "cash",
+    "description": "Flexible financial assistance can help cover costs for prescriptions, medical bills, water and sewer bills, car repair bills, and other needs based on an unexpected financial shock. Funds from this program along with eviction prevention and first month\u2019s rent are applied directly to the bill the client has been approved to receive financial assistance for.",
+    "access": "To access, fill out the online form or call the service center",
+    "contact": "(425)-869-6000",
+    "website": "https://www.hopelink.org/programs/financial-assistance/",
+    "address": "8990 154th Ave NE Redmond, WA 98052",
+    "zip_codes": [
+      "98029",
+      "98052",
+      "98053",
+      "98073",
+      "98074",
+      "98075"
+    ],
+    "counties": [
+      "King"
+    ],
+    "notes": "Only serves those parts of eligible ZIPs within King County. Lottery based each month, and must reapply monthly to stay on the list"
+  },
+  {
+    "id": "financial_assistance__cash__005",
+    "name": "Hopelink",
+    "domain": "financial_assistance",
+    "subdomain": "cash",
+    "description": "Flexible financial assistance can help cover costs for prescriptions, medical bills, water and sewer bills, car repair bills, and other needs based on an unexpected financial shock. Funds from this program along with eviction prevention and first month\u2019s rent are applied directly to the bill the client has been approved to receive financial assistance for.",
+    "access": "To access, fill out the online form or call the service center",
+    "contact": "(425)-943-7555",
+    "website": "https://www.hopelink.org/programs/financial-assistance/",
+    "address": "14812 Main St Bellevue, WA 98007",
+    "zip_codes": [
+      "98004",
+      "98005",
+      "98006",
+      "98007",
+      "98008",
+      "98009",
+      "98015",
+      "98027",
+      "98029",
+      "98039",
+      "98040",
+      "98056",
+      "98059",
+      "98075"
+    ],
+    "counties": [
+      "King"
+    ],
+    "notes": "Only serves those parts of eligible ZIPs within King County. Lottery based each month, and must reapply monthly to stay on the list"
+  },
+  {
+    "id": "financial_assistance__rental_assistance__001",
+    "name": "Hopelink",
+    "domain": "financial_assistance",
+    "subdomain": "rental_assistance",
+    "description": "When a low-income family is establishing a new home \u2013 often for the first time \u2013 Hopelink can help to pay a portion of the high costs of settling into a new apartment. Move-in costs range from the first month\u2019s rent to deposits. This kind of assistance can make a difference for a family at risk of losing their housing.",
+    "access": "To access, fill out the online form or call the service center",
+    "contact": "(425)-333-4163",
+    "website": "https://www.hopelink.org/programs/financial-assistance/",
+    "address": "31957 East Commercial St Carnation,\u00a0 Washington\u00a0 98014",
+    "zip_codes": [
+      "98014",
+      "98019",
+      "98204",
+      "98045",
+      "98050",
+      "98065",
+      "98068",
+      "98224",
+      "98288",
+      "98294"
+    ],
+    "counties": [
+      "King"
+    ],
+    "notes": "Only serves those parts of eligible ZIPs within King County. Lottery based each month, and must reapply monthly to stay on the list"
+  },
+  {
+    "id": "financial_assistance__rental_assistance__002",
+    "name": "Hopelink",
+    "domain": "financial_assistance",
+    "subdomain": "rental_assistance",
+    "description": "When a low-income family is establishing a new home \u2013 often for the first time \u2013 Hopelink can help to pay a portion of the high costs of settling into a new apartment. Move-in costs range from the first month\u2019s rent to deposits. This kind of assistance can make a difference for a family at risk of losing their housing.",
+    "access": "To access, fill out the online form or call the service center",
+    "contact": "(425)-889-7880",
+    "website": "https://www.hopelink.org/programs/financial-assistance/",
+    "address": "1101 120th Ave NE Kirkland, WA 98033",
+    "zip_codes": [
+      "98011",
+      "98012",
+      "98021",
+      "98033",
+      "98034",
+      "98041",
+      "98072",
+      "98077",
+      "98083"
+    ],
+    "counties": [
+      "King"
+    ],
+    "notes": "Only serves those parts of eligible ZIPs within King County. Lottery based each month, and must reapply monthly to stay on the list"
+  },
+  {
+    "id": "financial_assistance__rental_assistance__003",
+    "name": "Hopelink",
+    "domain": "financial_assistance",
+    "subdomain": "rental_assistance",
+    "description": "When a low-income family is establishing a new home \u2013 often for the first time \u2013 Hopelink can help to pay a portion of the high costs of settling into a new apartment. Move-in costs range from the first month\u2019s rent to deposits. This kind of assistance can make a difference for a family at risk of losing their housing.",
+    "access": "To access, fill out the online form or call the service center",
+    "contact": "(206)-440-7300",
+    "website": "https://www.hopelink.org/programs/financial-assistance/",
+    "address": "17837 Aurora Ave N Shoreline, WA 98133",
+    "zip_codes": [
+      "98133",
+      "98155",
+      "98177"
+    ],
+    "counties": [
+      "King"
+    ],
+    "notes": "Only serves those parts of eligible ZIPs within King County. Lottery based each month, and must reapply monthly to stay on the list"
+  },
+  {
+    "id": "financial_assistance__rental_assistance__004",
+    "name": "Hopelink",
+    "domain": "financial_assistance",
+    "subdomain": "rental_assistance",
+    "description": "When a low-income family is establishing a new home \u2013 often for the first time \u2013 Hopelink can help to pay a portion of the high costs of settling into a new apartment. Move-in costs range from the first month\u2019s rent to deposits. This kind of assistance can make a difference for a family at risk of losing their housing.",
+    "access": "To access, fill out the online form or call the service center",
+    "contact": "(425)-869-6000",
+    "website": "https://www.hopelink.org/programs/financial-assistance/",
+    "address": "8990 154th Ave NE Redmond, WA 98052",
+    "zip_codes": [
+      "98029",
+      "98052",
+      "98053",
+      "98073",
+      "98074",
+      "98075"
+    ],
+    "counties": [
+      "King"
+    ],
+    "notes": "Only serves those parts of eligible ZIPs within King County. Lottery based each month, and must reapply monthly to stay on the list"
+  },
+  {
+    "id": "financial_assistance__rental_assistance__005",
+    "name": "Hopelink",
+    "domain": "financial_assistance",
+    "subdomain": "rental_assistance",
+    "description": "When a low-income family is establishing a new home \u2013 often for the first time \u2013 Hopelink can help to pay a portion of the high costs of settling into a new apartment. Move-in costs range from the first month\u2019s rent to deposits. This kind of assistance can make a difference for a family at risk of losing their housing.",
+    "access": "To access, fill out the online form or call the service center",
+    "contact": "(425)-943-7555",
+    "website": "https://www.hopelink.org/programs/financial-assistance/",
+    "address": "14812 Main St Bellevue, WA 98007",
+    "zip_codes": [
+      "98004",
+      "98005",
+      "98006",
+      "98007",
+      "98008",
+      "98009",
+      "98015",
+      "98027",
+      "98029",
+      "98039",
+      "98040",
+      "98056",
+      "98059",
+      "98075"
+    ],
+    "counties": [
+      "King"
+    ],
+    "notes": "Only serves those parts of eligible ZIPs within King County. Lottery based each month, and must reapply monthly to stay on the list"
+  },
+  {
+    "id": "financial_assistance__eviction_prevention__001",
+    "name": "Hopelink",
+    "domain": "financial_assistance",
+    "subdomain": "eviction_prevention",
+    "description": "When a family is in danger of losing its home due to receiving a 14- or 30-day pay or vacate notice, Hopelink can help to provide a portion of the funds needed to prevent eviction. Preventing homelessness costs at least five times less than helping a family regain stable housing after it\u2019s lost. In addition to preventing eviction, Hopelink\u2019s Financial Assistance program may be able to help with move-in costs.",
+    "access": "To access, fill out the online form or call the service center",
+    "contact": "(425)-333-4163",
+    "website": "https://www.hopelink.org/programs/financial-assistance/",
+    "address": "31957 East Commercial St Carnation,\u00a0 Washington\u00a0 98014",
+    "zip_codes": [
+      "98014",
+      "98019",
+      "98204",
+      "98045",
+      "98050",
+      "98065",
+      "98068",
+      "98224",
+      "98288",
+      "98294"
+    ],
+    "counties": [
+      "King"
+    ],
+    "notes": "Only serves those parts of eligible ZIPs within King County. Lottery based each month, and must reapply monthly to stay on the list"
+  },
+  {
+    "id": "financial_assistance__eviction_prevention__002",
+    "name": "Hopelink",
+    "domain": "financial_assistance",
+    "subdomain": "eviction_prevention",
+    "description": "When a family is in danger of losing its home due to receiving a 14- or 30-day pay or vacate notice, Hopelink can help to provide a portion of the funds needed to prevent eviction. Preventing homelessness costs at least five times less than helping a family regain stable housing after it\u2019s lost. In addition to preventing eviction, Hopelink\u2019s Financial Assistance program may be able to help with move-in costs.",
+    "access": "To access, fill out the online form or call the service center",
+    "contact": "(425)-889-7880",
+    "website": "https://www.hopelink.org/programs/financial-assistance/",
+    "address": "1101 120th Ave NE Kirkland, WA 98033",
+    "zip_codes": [
+      "98011",
+      "98012",
+      "98021",
+      "98033",
+      "98034",
+      "98041",
+      "98072",
+      "98077",
+      "98083"
+    ],
+    "counties": [
+      "King"
+    ],
+    "notes": "Only serves those parts of eligible ZIPs within King County. Lottery based each month, and must reapply monthly to stay on the list"
+  },
+  {
+    "id": "financial_assistance__eviction_prevention__003",
+    "name": "Hopelink",
+    "domain": "financial_assistance",
+    "subdomain": "eviction_prevention",
+    "description": "When a family is in danger of losing its home due to receiving a 14- or 30-day pay or vacate notice, Hopelink can help to provide a portion of the funds needed to prevent eviction. Preventing homelessness costs at least five times less than helping a family regain stable housing after it\u2019s lost. In addition to preventing eviction, Hopelink\u2019s Financial Assistance program may be able to help with move-in costs.",
+    "access": "To access, fill out the online form or call the service center",
+    "contact": "(206)-440-7300",
+    "website": "https://www.hopelink.org/programs/financial-assistance/",
+    "address": "17837 Aurora Ave N Shoreline, WA 98133",
+    "zip_codes": [
+      "98133",
+      "98155",
+      "98177"
+    ],
+    "counties": [
+      "King"
+    ],
+    "notes": "Only serves those parts of eligible ZIPs within King County. Lottery based each month, and must reapply monthly to stay on the list"
+  },
+  {
+    "id": "financial_assistance__eviction_prevention__004",
+    "name": "Hopelink",
+    "domain": "financial_assistance",
+    "subdomain": "eviction_prevention",
+    "description": "When a family is in danger of losing its home due to receiving a 14- or 30-day pay or vacate notice, Hopelink can help to provide a portion of the funds needed to prevent eviction. Preventing homelessness costs at least five times less than helping a family regain stable housing after it\u2019s lost. In addition to preventing eviction, Hopelink\u2019s Financial Assistance program may be able to help with move-in costs.",
+    "access": "To access, fill out the online form or call the service center",
+    "contact": "(425)-869-6000",
+    "website": "https://www.hopelink.org/programs/financial-assistance/",
+    "address": "8990 154th Ave NE Redmond, WA 98052",
+    "zip_codes": [
+      "98029",
+      "98052",
+      "98053",
+      "98073",
+      "98074",
+      "98075"
+    ],
+    "counties": [
+      "King"
+    ],
+    "notes": "Only serves those parts of eligible ZIPs within King County. Lottery based each month, and must reapply monthly to stay on the list"
+  },
+  {
+    "id": "financial_assistance__eviction_prevention__005",
+    "name": "Hopelink",
+    "domain": "financial_assistance",
+    "subdomain": "eviction_prevention",
+    "description": "When a family is in danger of losing its home due to receiving a 14- or 30-day pay or vacate notice, Hopelink can help to provide a portion of the funds needed to prevent eviction. Preventing homelessness costs at least five times less than helping a family regain stable housing after it\u2019s lost. In addition to preventing eviction, Hopelink\u2019s Financial Assistance program may be able to help with move-in costs.",
+    "access": "To access, fill out the online form or call the service center",
+    "contact": "(425)-943-7555",
+    "website": "https://www.hopelink.org/programs/financial-assistance/",
+    "address": "14812 Main St Bellevue, WA 98007",
+    "zip_codes": [
+      "98004",
+      "98005",
+      "98006",
+      "98007",
+      "98008",
+      "98009",
+      "98015",
+      "98027",
+      "98029",
+      "98039",
+      "98040",
+      "98056",
+      "98059",
+      "98075"
+    ],
+    "counties": [
+      "King"
+    ],
+    "notes": "Only serves those parts of eligible ZIPs within King County. Lottery based each month, and must reapply monthly to stay on the list"
+  },
+  {
+    "id": "food__food_pantry__001",
+    "name": "Hopelink",
+    "domain": "food",
+    "subdomain": "food_pantry",
+    "description": "At no cost, clients can shop at the market as they would in a typical grocery store by choosing the items that best fit their household needs.",
+    "access": "All shoppers must be enrolled in the Food Assistance Program. Options to enroll or renew an expired enrollment include an online application, scheduled phone appointment, or in-person appointment. Once enrolled, clients can schedule a time to shop either by calling their local center or in-person during a food shopping visit.",
+    "contact": "(425)-333-4163",
+    "website": "https://www.hopelink.org/programs/food-program/",
+    "address": "31957 East Commercial St Carnation,\u00a0 Washington\u00a0 98014",
+    "zip_codes": [
+      "98014",
+      "98019",
+      "98204",
+      "98045",
+      "98050",
+      "98065",
+      "98068",
+      "98224",
+      "98288",
+      "98294"
+    ],
+    "counties": [
+      "King"
+    ],
+    "notes": "Appointments are encouraged. Walk-ins are welcome during the last hour of market hour, which are available at the listed website"
+  },
+  {
+    "id": "food__food_pantry__002",
+    "name": "Hopelink",
+    "domain": "food",
+    "subdomain": "food_pantry",
+    "description": "At no cost, clients can shop at the market as they would in a typical grocery store by choosing the items that best fit their household needs.",
+    "access": "All shoppers must be enrolled in the Food Assistance Program. Options to enroll or renew an expired enrollment include an online application, scheduled phone appointment, or in-person appointment. Once enrolled, clients can schedule a time to shop either by calling their local center or in-person during a food shopping visit.",
+    "contact": "(425)-889-7880",
+    "website": "https://www.hopelink.org/programs/food-program/",
+    "address": "1101 120th Ave NE Kirkland, WA 98033",
+    "zip_codes": [
+      "98011",
+      "98012",
+      "98021",
+      "98033",
+      "98034",
+      "98041",
+      "98072",
+      "98077",
+      "98083"
+    ],
+    "counties": [
+      "King"
+    ],
+    "notes": "Appointments are encouraged. Walk-ins are welcome during the last hour of market hour, which are available at the listed website"
+  },
+  {
+    "id": "food__food_pantry__003",
+    "name": "Hopelink",
+    "domain": "food",
+    "subdomain": "food_pantry",
+    "description": "At no cost, clients can shop at the market as they would in a typical grocery store by choosing the items that best fit their household needs.",
+    "access": "All shoppers must be enrolled in the Food Assistance Program. Options to enroll or renew an expired enrollment include an online application, scheduled phone appointment, or in-person appointment. Once enrolled, clients can schedule a time to shop either by calling their local center or in-person during a food shopping visit.",
+    "contact": "(206)-440-7300",
+    "website": "https://www.hopelink.org/programs/food-program/",
+    "address": "17837 Aurora Ave N Shoreline, WA 98133",
+    "zip_codes": [
+      "98133",
+      "98155",
+      "98177"
+    ],
+    "counties": [
+      "King"
+    ],
+    "notes": "Appointments are encouraged. Walk-ins are welcome during the last hour of market hour, which are available at the listed website"
+  },
+  {
+    "id": "food__food_pantry__004",
+    "name": "Hopelink",
+    "domain": "food",
+    "subdomain": "food_pantry",
+    "description": "At no cost, clients can shop at the market as they would in a typical grocery store by choosing the items that best fit their household needs.",
+    "access": "All shoppers must be enrolled in the Food Assistance Program. Options to enroll or renew an expired enrollment include an online application, scheduled phone appointment, or in-person appointment. Once enrolled, clients can schedule a time to shop either by calling their local center or in-person during a food shopping visit.",
+    "contact": "(425)-869-6000",
+    "website": "https://www.hopelink.org/programs/food-program/",
+    "address": "8990 154th Ave NE Redmond, WA 98052",
+    "zip_codes": [
+      "98029",
+      "98052",
+      "98053",
+      "98073",
+      "98074",
+      "98075"
+    ],
+    "counties": [
+      "King"
+    ],
+    "notes": "Appointments are encouraged. Walk-ins are welcome during the last hour of market hour, which are available at the listed website"
+  },
+  {
+    "id": "food__food_pantry__005",
+    "name": "Hopelink",
+    "domain": "food",
+    "subdomain": "food_pantry",
+    "description": "At no cost, clients can shop at the market as they would in a typical grocery store by choosing the items that best fit their household needs.",
+    "access": "All shoppers must be enrolled in the Food Assistance Program. Options to enroll or renew an expired enrollment include an online application, scheduled phone appointment, or in-person appointment. Once enrolled, clients can schedule a time to shop either by calling their local center or in-person during a food shopping visit.",
+    "contact": "(425)-943-7555",
+    "website": "https://www.hopelink.org/programs/food-program/",
+    "address": "14812 Main St Bellevue, WA 98007",
+    "zip_codes": [
+      "98004",
+      "98005",
+      "98006",
+      "98007",
+      "98008",
+      "98009",
+      "98015",
+      "98027",
+      "98029",
+      "98039",
+      "98040",
+      "98056",
+      "98059",
+      "98075"
+    ],
+    "counties": [
+      "King"
+    ],
+    "notes": "Appointments are encouraged. Walk-ins are welcome during the last hour of market hour, which are available at the listed website"
+  },
+  {
+    "id": "financial_assistance__cash__006",
+    "name": "St. Vincent de Paul of Seattle/King County",
+    "domain": "financial_assistance",
+    "subdomain": "cash",
+    "description": "St. Vincent de Paul Helpline assists people who need help with basic needs like rent, food, utilities and clothing.",
+    "access": "Call the helpline M-F from 8-3, or apply online",
+    "contact": "206-767-6449",
+    "website": "https://fs20.formsite.com/svdpseattle/nnekxexcud/index",
+    "address": "5950 Fourth Avenue South Seattle, WA 98108",
+    "zip_codes": [],
+    "counties": [
+      "King"
+    ],
+    "notes": "Only serves King County. May receive a call or visit from trained volunteers to help meet any other needs"
+  },
+  {
+    "id": "financial_assistance__rental_assistance__006",
+    "name": "St. Vincent de Paul of Seattle/King County",
+    "domain": "financial_assistance",
+    "subdomain": "rental_assistance",
+    "description": "St. Vincent de Paul Helpline assists people who need help with basic needs like rent, food, utilities and clothing.",
+    "access": "Call the helpline M-F from 8-3, or apply online",
+    "contact": "206-767-6450",
+    "website": "https://fs20.formsite.com/svdpseattle/nnekxexcud/index",
+    "address": "5951 Fourth Avenue South Seattle, WA 98108",
+    "zip_codes": [],
+    "counties": [
+      "King"
+    ],
+    "notes": "Only serves King County. May receive a call or visit from trained volunteers to help meet any other needs"
+  },
+  {
+    "id": "financial_assistance__eviction_prevention__006",
+    "name": "St. Vincent de Paul of Seattle/King County",
+    "domain": "financial_assistance",
+    "subdomain": "eviction_prevention",
+    "description": "St. Vincent de Paul Helpline assists people who need help with basic needs like rent, food, utilities and clothing.",
+    "access": "Call the helpline M-F from 8-3, or apply online",
+    "contact": "206-767-6451",
+    "website": "https://fs20.formsite.com/svdpseattle/nnekxexcud/index",
+    "address": "5952 Fourth Avenue South Seattle, WA 98108",
+    "zip_codes": [],
+    "counties": [
+      "King"
+    ],
+    "notes": "Only serves King County. May receive a call or visit from trained volunteers to help meet any other needs"
+  },
+  {
+    "id": "financial_assistance__utilities__001",
+    "name": "St. Vincent de Paul of Seattle/King County",
+    "domain": "financial_assistance",
+    "subdomain": "utilities",
+    "description": "St. Vincent de Paul Helpline assists people who need help with basic needs like rent, food, utilities and clothing.",
+    "access": "Call the helpline M-F from 8-3, or apply online",
+    "contact": "206-767-6452",
+    "website": "https://fs20.formsite.com/svdpseattle/nnekxexcud/index",
+    "address": "5953 Fourth Avenue South Seattle, WA 98108",
+    "zip_codes": [],
+    "counties": [
+      "King"
+    ],
+    "notes": "Only serves King County. May receive a call or visit from trained volunteers to help meet any other needs"
+  },
+  {
+    "id": "financial_assistance__rental_assistance__007",
+    "name": "United Way of King County",
+    "domain": "financial_assistance",
+    "subdomain": "rental_assistance",
+    "description": "Rental assistance, but not move-in assistance. Must owe back-rent at current address.",
+    "access": "Fill out the Client Intake Form to see if you\u2019re eligible. Be sure to save your Record ID after submitting! After applying, watch your email closely. You may hear from United Way or a partner organization. Check your spam/junk folder and use the same email and phone number when following up.",
+    "contact": null,
+    "website": "https://www.uwkc.org/renthelp/",
+    "address": null,
+    "zip_codes": [],
+    "counties": [
+      "King"
+    ],
+    "notes": "Only serves King County. Processes all applications, but does not guarantee assistance. May take quite a while."
+  },
+  {
+    "id": "financial_assistance__tax_forms_assistance__001",
+    "name": "United Way of King County",
+    "domain": "financial_assistance",
+    "subdomain": "tax_forms_assistance",
+    "description": "Help with filling out tax forms during tax season. Both virtual and in person.",
+    "access": "Navigate to the appropriate portion of the website",
+    "contact": null,
+    "website": "https://www.uwkc.org/need-help/myfreetaxeswa/",
+    "address": null,
+    "zip_codes": [],
+    "counties": [
+      "King"
+    ],
+    "notes": null
+  },
+  {
+    "id": "food__financial_help_for_food__001",
+    "name": "Basic Food",
+    "domain": "food",
+    "subdomain": "financial_help_for_food",
+    "description": "Also caled EBT or SNAP",
+    "access": "To access, fill out the online form or call",
+    "contact": "877-501-2233",
+    "website": "www.washingtonconnection.org",
+    "address": null,
+    "zip_codes": [],
+    "counties": [],
+    "notes": null
+  },
+  {
+    "id": "financial_assistance__utilities__002",
+    "name": "SCL Utility Discount Program",
+    "domain": "financial_assistance",
+    "subdomain": "utilities",
+    "description": "The City of Seattle can help people who are struggling to pay their electricity, water, and waste utility bills. Eligible households can enroll in the City of Seattle\u2019s Utility Discount Program (UDP), which offers a 60% discount on Seattle City Light bills and a 50% discount on Seattle Public Utilities bills.",
+    "access": "To access, complete the online enrollment form",
+    "contact": null,
+    "website": "https://www.seattle.gov/utilities/your-services/discounts-and-incentives/utility-discount-program#En_x162078",
+    "address": null,
+    "zip_codes": [],
+    "counties": [
+      "King"
+    ],
+    "notes": "For households with utilities in their name in Seattle"
+  },
+  {
+    "id": "financial_assistance__utilities__003",
+    "name": "PSE Utility Discount Program",
+    "domain": "financial_assistance",
+    "subdomain": "utilities",
+    "description": "Bill Discount Rate (BDR) program provides you with ongoing help on your monthly energy bill. Depending on your household income and household size, you can save 5% to 45% a month on your bill.",
+    "access": "To access, complete the online enrollment form",
+    "contact": null,
+    "website": "https://www.pse.com/en/account-and-billing/assistance-programs/bill-discount-rate",
+    "address": null,
+    "zip_codes": [],
+    "counties": [],
+    "notes": "For households with utilities in their name with PSE"
+  }
+]
